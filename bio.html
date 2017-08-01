@@ -2,23 +2,37 @@
 <html lang="en">
 <head>
   <title>Kim's Bio</title>
+  <meta name="author" content="Kim Nguyen" />
+  <meta name="job" content="student of Java bootcamp" />
+  <style>
+/*span is more specific than p, p is more specific than body, the lower level the tag, the more specific it gets*/
+  body {
+    color: blue;
+  }
+  p {
+    color:rgb(255,120,0); <!-- need 2 pcs of info in style-->
+  }
+  span {
+    color:green;
+  }
+  </style>
 </head>
 <body>
     <h1>Get to know Kim:</h1>
     <p>
-      <span style="color:red">Kim</span>
+      <span>Kim Nguyen</span>
 
       moved to Cincinnati, OH from Vietnam. Exceptionally passionate in IT field, she studied software testing through Per Scholas Technical Institute at the CityLink Center and proceeded to work in a work-life balance, upscale environment, assuring client delight on software quality. Before devoting her full time at Thrive as a Quality Assurance Analyst, Kim spent several years concentrating on chemistry and healthcare related areas at Xavier University.
       <br />
       <br />
-      At the present time, Kim is joining the bootcamp journey to become a software developer with Mr. Doud and Mr. Blessing (her instructors) for 10 weeks at Max Technical Training locates in Mason, OH
+      At the present time, Kim is joining the bootcamp journey to become a software developer with Mr. Doud and Mr. Blessing (her instructors) for 10 weeks at <a href="https://maxtrain.com/">Max Technical Training</a> locates in Mason, OH
     </p>
     <p>
       Kim favorite quote is <b>"Think of me as the keeper of the eternal flame of knowledge. Whose mission is to ensure the flame never goes out."</b>
     </p>
     <p>
       These are a list of my programming skills:
-      <ol>
+      <ol> <!-- ol makes the list doesn't change color style-->
         <li>Git / GitHub</li>
         <li>HTML</li>
         <li>CSS</li>
