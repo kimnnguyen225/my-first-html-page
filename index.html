@@ -1,11 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>This shows in the window title bar</title>
+  <title>About Kim's Site</title>
 </head>
+<style>
+body {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 14pt;
+  color: black;
+}
+a:link {
+    color:red;
+    text-decoration: none;
+    font-size: 18pt;
+}
+a:hover {
+    color: purple;
+}
+a:visited {
+    color: yellow;
+}
+a:active {
+    color: black;
+}
+div#menu ul {
+    list-style-type: none;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+div#menu li {
+    display: inline-block;
+    float:left, top;
+}
+div#menu li a {
+    color: white;
+    text-align: center;
+    padding: 15px 145px;
+    text-decoration: none;
+}
+div#menu li a:hover {
+    background-color: #111;
+}
+</style>
 <body>
-    <h1>My first html page</h1>
-    <p>This is the first paragraph on my first html page</p>
-    <h3>Created by Kim nguyen</h3>
+  <div id='menu'>
+    <ul>
+        <li>
+            <a href='index.html'>About</a>
+        </li>
+        <li>
+            <a href='bio.html'>Bio</a>
+        </li>
+        <li>
+            <a href='friends.html'>Friends</a>
+        </li>
+        <li>
+            <a href='myfavsites.html'>Sites</a>
+        </li>
+        <li>
+            <a href='bootcamp.html'>Pros Cons</a>
+        </li>
+    </ul>
+  </div>
+    <h1>About Kim's Website</h1>
+    <p>She created this site because she's learning HTML and CSS from Mr. Doud at Max Technical Training.<br />
+    There are several menus, take a look to see what she has created after 3 days attending bootcamp.
+    </p>
+      <img src="https://www.clipartsgram.com/image/1209060221-displaying-18-images-for-preschool-kids-learning-clip-art-mgeyky-clipart.jpg" alt="Mountain View" style="width:600px;height:300
+  px;">
+    <h3>Created by Kim</h3>
 </body>
 </html>

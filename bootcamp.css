@@ -1,0 +1,11 @@
+div {
+  border: 1px solid black;
+}
+#pros, #cons, #conhead, #whyjava, #prohead, #whyhead {
+  width: 33%;
+  display: inline-block;
+}
+#prohead, #conhead, #whyhead {
+  border:0;
+  text-align: center;
+}

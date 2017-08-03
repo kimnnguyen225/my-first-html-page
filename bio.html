@@ -7,37 +7,148 @@
   <style>
 /*span is more specific than p, p is more specific than body, the lower level the tag, the more specific it gets*/
   body {
-    color: blue;
+    font-family: sans-serif;
+    font-size: 14pt;
+    color: green;
   }
   p {
-    color:rgb(255,120,0); <!-- need 2 pcs of info in style-->
+    color:red; <!-- need 2 pcs of info in style-->
   }
   span {
-    color:green;
+    color:purple;
+  }
+  #divid {
+      border: 2px solid black;
+      padding:10px;
+  }
+  .makebold {
+      font-weight: bold;
+  }
+  .makeitalic {
+      font-style: italic;
+  }
+  #boldthis {
+      font-weight: bold;
+  }
+  #mainh1 {
+      color: red;
+  }
+  #travel {
+
+  }
+  a:link {
+      color:red;
+      text-decoration: none;
+      font-size: 18pt;
+  }
+  a:hover {
+      color: purple;
+  }
+  a:visited {
+      color: yellow;
+  }
+  a:active {
+      color: black;
+  }
+  div#menu ul {
+      list-style-type: none;
+      background-color: #333;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+  }
+  div#menu li {
+      display: inline-block;
+      float:left, top;
+  }
+  div#menu li a {
+      color: white;
+      text-align: center;
+      padding: 15px 145px;
+      text-decoration: none;
+  }
+  div#menu li a:hover {
+      background-color: #111;
+  }
+  table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+  }
+  th, td {
+      padding: 5px;
+  }
+  table.center {
+      margin-left:auto;
+      margin-right:auto;
   }
   </style>
 </head>
 <body>
-    <h1>Get to know Kim:</h1>
+  <div id='menu'>
+    <ul>
+        <li>
+            <a href='index.html'>About</a>
+        </li>
+        <li>
+            <a href='bio.html'>Bio</a>
+        </li>
+        <li>
+            <a href='friends.html'>Friends</a>
+        </li>
+        <li>
+            <a href='myfavsites.html'>Sites</a>
+        </li>
+        <li>
+            <a href='bootcamp.html'>Pros Cons</a>
+        </li>
+    </ul>
+  </div>
     <p>
-      <span>Kim Nguyen</span>
-
-      moved to Cincinnati, OH from Vietnam. Exceptionally passionate in IT field, she studied software testing through Per Scholas Technical Institute at the CityLink Center and proceeded to work in a work-life balance, upscale environment, assuring client delight on software quality. Before devoting her full time at Thrive as a Quality Assurance Analyst, Kim spent several years concentrating on chemistry and healthcare related areas at Xavier University.
+      <div id='divid'>
+        <h2 id='mainh1'; align='center';>About Kim</h2>
+        <!-- <h3><a href='http://www.google.com'>Google</a></h3> -->
+        <span class='makebold'; style='font-size:20px';>Kim Nguyen
+        </span>
+        moved to Cincinnati, OH from Vietnam. Exceptionally passionate in IT field, she studied software testing through <span id='boldthis'>Per Scholas Technical Institute</span> at the CityLink Center and proceeded to work in a work-life balance, upscale environment, assuring client delight on software quality. Before devoting her full time at Thrive as a Quality Assurance Analyst, Kim spent several years concentrating on chemistry and healthcare related areas at Xavier University.
+        <br />
+        <br />
+        At the present time, Kim is joining the bootcamp journey to become a software developer with Mr. Doud and Mr. Blessing (her instructors) for 10 weeks at <a href="https://maxtrain.com/"; id='boldthis'>Max Technical Training</a> locates in Mason, OH
+      </div>
       <br />
-      <br />
-      At the present time, Kim is joining the bootcamp journey to become a software developer with Mr. Doud and Mr. Blessing (her instructors) for 10 weeks at <a href="https://maxtrain.com/">Max Technical Training</a> locates in Mason, OH
+      <div id='divid'>
+        <p>
+          Kim favorite quote is <b>"Think of me as the keeper of the eternal flame of knowledge. Whose mission is to ensure the flame never goes out."</b>
+        </p>
+          <div id='travel'>
+              <tr>
+                <td><span class='makeitalic'>Kim also likes to travel to:
+                    </span>
+                  <table class="center";>
+                    <tr>
+                      <td style='font-size:12pt';>Greek</td>
+                      <td style='font-size:12pt';>England</td>
+                    </tr>
+                    <tr>
+                      <td style='font-size:12pt';>France</td>
+                      <td style='font-size:12pt';>Korea</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+          </div>
+        <p>
+          <span class='makeitalic'>These are a list of my programming skills:
+          </span>
+          <ol> <!-- ol makes the list doesn't change color style-->
+            <li>Git / GitHub</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+          </ol>
+        </p>
+      </div>
     </p>
-    <p>
-      Kim favorite quote is <b>"Think of me as the keeper of the eternal flame of knowledge. Whose mission is to ensure the flame never goes out."</b>
-    </p>
-    <p>
-      These are a list of my programming skills:
-      <ol> <!-- ol makes the list doesn't change color style-->
-        <li>Git / GitHub</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Javascript</li>
-      </ol>
-    </p>
+    <!-- <p align="right", style='color:orange';'font-size: 10pt';>Contribute by: Kim Nguyen<br />Thank you for your visit
+    </p> -->
 </body>
 </html>

@@ -5,7 +5,7 @@
   <meta name="author" content="Kim Nguyen" />
   <meta name="job" content="student of Java bootcamp" />
   <style>
-  div {
+  /*div {
       width: 49%;
       border: 1px solid grey;
       display: inline-block;
@@ -14,39 +14,96 @@
     width: 100%;
     border: 1px solid blue;
     display: inline-block;
-  }
+  }*/
   body {
+    font-family: sans-serif;
+    font-size: 16pt;
     color: red;
   }
   p {
     color:black;
   }
+  #pcolor {
+    color:red;
+  }
   span {
     color:green;
   }
+  h2 {
+    text-align: center;
+  }
   ol {
-    color:rgb(0,113,64)
+    color:black
+  }
+  a:link {
+      color:blue;
+      text-decoration: none;
+      font-size: 18pt;
+  }
+  a:hover {
+      color: purple;
+  }
+  a:visited {
+      color: yellow;
+  }
+  a:active {
+      color: black;
+  }
+  div#menu ul {
+      list-style-type: none;
+      background-color: #333;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+  }
+  div#menu li {
+      display: inline-block;
+      float:left, top;
+  }
+  div#menu li a {
+      color: white;
+      text-align: center;
+      padding: 15px 150px;
+      text-decoration: none;
+  }
+  div#menu li a:hover {
+      background-color: #111;
   }
   </style>
 </head>
-</script>
 <body>
-    <h1>Hey, are you bored? Check out these sites listed below</h1>
+<div id='menu'>
+  <ul>
+      <li>
+          <a href='index.html'>About</a>
+      </li>
+      <li>
+          <a href='bio.html'>Bio</a>
+      </li>
+      <li>
+          <a href='friends.html'>Friends</a>
+      </li>
+      <li>
+          <a href='myfavsites.html'>Sites</a>
+      </li>
+      <li>
+          <a href='bootcamp.html'>Pros Cons</a>
+      </li>
+  </ul>
+</div>
+    <h2>Hey, are you bored? Check out these sites listed below</h2>
     <h3>
     <span><a href="http://www.thinkgeek.com/">Think Geek
     </a></span>
     </h3>
-    <div id = "cooldiv">
-      <p style="background-color:rgb(198,255,255); color:rgb(255,100,0)";>
+      <p id='pcolor'>
       ThinkGeek is obsessed with creating and sharing unique and authentic product experiences that stimulate our fans' imaginations and fuel their geek core.
       <br />
       <br />
       Since 1999, <a href="http://www.thinkgeek.com/">Think Geek
       </a> has been on a mission to create a world where everyone can embrace their inner geek and connect with one another. What started as a place for clever t-shirts and unusual gifts is now the best way to find wondrous goods that express all your passions - much of which you won't find anywhere else on Earth (or any other planet).
       </p>
-    </div>
-    <h2>
-    <table>
+    <!-- <table>
       <thead>
         <tr>
           <td>Id</td>
@@ -76,7 +133,7 @@
           </td>
         </tr>
       </tfoot>
-    </table></h2>
+    </table> -->
     <h3>
     <span><a href="https://www.cyberpowerpc.com/"><b>CYBERPOWER</b>PC
     </a></span>
